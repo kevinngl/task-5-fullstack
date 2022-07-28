@@ -1,0 +1,233 @@
+{
+	"info": {
+		"_postman_id": "27633fc9-b2b0-44bc-87df-7fee80c4ae85",
+		"name": "Laravel-Passport-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17412630"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "ris",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ris@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "ris",
+							"type": "text"
+						},
+						{
+							"key": "c_password",
+							"value": "ris",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYzA4MjRlMTk5NDQ3YWI4OGI2MWE3NTczMDMwNWViYTI1NmFiN2FmYzMwZWJlOWYyZTdjYmQ1Mzk2YjgzNDU3NmRjY2FjMmJjOTM1NDU0MWYiLCJpYXQiOjE2NTg2NDI1NjEuMzQ3MjkyLCJuYmYiOjE2NTg2NDI1NjEuMzQ3Mjk1LCJleHAiOjE2OTAxNzg1NjEuMzM1MTEyLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.dR4JsSBkzogz-Ab5-3watWXgRJ0zOaZ2ICRvoKh4Pw9kyS31JNgbZrbCqxz8tBZBCA7TrWs4Zk8iwQv9JDgumLmo9RdPb3uEVTN-qehHkTSXDYfjv-wFpnhmy6RBjlzhQFwILuB6dOft692A2NePE8dS2EF7n3ayKyOO-iX4gAu3i4FHp0bZV58hvrtA5SbqGkjQI4vPlCsZh_LD9EJtd03XdcVJlGDkD6AOPhelIqAFccUfZHa4H9BlOZwLvYaH37lbMfJvGC11mxBwXJMMZ7OG6DXzofxkAQ--1t-rQKBkMQN3TSMe64BhOXjNtzYHWu2M1WrkK74I7-xXHtJnS4TMwDkJs56eV2XUZjXsysL0z6u4bGgBRjmdrmq6LHTmmcqY-NTKWh2xglQeX7jt0_8YSjY4B8B5ji9whby1YqLOV0fmk2Vbf1BZ_T-WzEz2VxIeVEo-ycmONWl6xaj23H8q6BI5yl3E7L2xNTOe0mjgUjAkIbeQdQLbmMWZQP03Lg8xlraigsNh96dlUMo5ux_F6UxUDXgVFQHJ7OJt-ZkCi4ESpmHFRl5aGZ4bQIOrnsWuH1it7Zip30W9Vt1oJwNM-qXtYT2WbJQe_xeb3lo_4wNeiulonn6o-jEM16r7KkUmwJqxiRNOVhcPLfLG2mYQtSJVstGhYIotLYsKAIU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/details",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "ris@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "ris",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNWUzMDg4ZTQ3OTZhYmU4NjAwY2FiYjZkY2QyOTllMGFiMWE0OGUyM2FiNzk0NDc1MTM1YTE0ZjEzY2NmNDFlZTc2NTEyNTU2ZTdhYzgzMTgiLCJpYXQiOjE2NTg3NTk0NjEuOTU5MjgzLCJuYmYiOjE2NTg3NTk0NjEuOTU5Mjg3LCJleHAiOjE2OTAyOTU0NjEuOTUyMzE5LCJzdWIiOiI2Iiwic2NvcGVzIjpbXX0.pOEZ1RDa9GJgwsbO43AyH6LkgCUt44edF9sjclt1ul25DXqn1td2owAtev-ZxFPr8U4JaQ_BGef1p-5lPBwhJaElOUCm9v4rymHSguwKB7zTt66W-V3Zx5Sb6ocZNjHMdBPr2qCK9U5607RWqkwwFjOi2J5rVxIoBRbKPqWxGZsX-JXT7TYDuT-HMT64EcdcwhH7fcJSm_tCo3jRWgjDgR6uYG6dqLZ-GsUdgk5nBtYNH7e8axScFBfz1z8a3G2YO77dbdWhFWHvDDBIn9Zh0PURx1tS_QLnUkdjggePcgkYNFZGI2t_tQ9FMaQZEJrA0xpObYSoM77sV6vxFiB_X_Du8wBU9w5zL8Bat4v_MYIiKAOFbotTbDlErK6XTao2rnCDVGNHeEvaS0sYDKgKml0iHs3UZkJRY86Msz1Upbq9qqMfXcz6HB7lZ7UTp6bU5_NLbmjqLyMYzEwRF2Vlr76pseqbxa1AD-2Ajbx6d8LqRh-8O2ougkyS8UVMsi69ybsA6LgdGOCIGvBAJEElcVasb2Jmz4QSrUgcSmYY8Ub0vwlE-OemLCEtWbJaZaco1gSALZZGJwtqGZ3NxN1ct23egidCv8J41O_L1Z7UW3FSJUIpSHiKV5gyOdtYEbp0WMa1pWw7rXv-c5z__IyMIB6kg3paIQNMUi147dU8t6Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "test test",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "123test",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "listAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/listAll",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"listAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
